@@ -1,0 +1,11 @@
+e:\WorkSpaces\C#\AlgorithmPractice\bin\Debug\netcoreapp3.1\AlgorithmPractice.exe
+E:\WorkSpaces\C#\AlgorithmPractice\bin\Debug\netcoreapp3.1\AlgorithmPractice.deps.json
+E:\WorkSpaces\C#\AlgorithmPractice\bin\Debug\netcoreapp3.1\AlgorithmPractice.runtimeconfig.json
+E:\WorkSpaces\C#\AlgorithmPractice\bin\Debug\netcoreapp3.1\AlgorithmPractice.runtimeconfig.dev.json
+e:\WorkSpaces\C#\AlgorithmPractice\bin\Debug\netcoreapp3.1\AlgorithmPractice.dll
+e:\WorkSpaces\C#\AlgorithmPractice\bin\Debug\netcoreapp3.1\AlgorithmPractice.pdb
+e:\WorkSpaces\C#\AlgorithmPractice\obj\Debug\netcoreapp3.1\AlgorithmPractice.csprojAssemblyReference.cache
+e:\WorkSpaces\C#\AlgorithmPractice\obj\Debug\netcoreapp3.1\AlgorithmPractice.AssemblyInfoInputs.cache
+e:\WorkSpaces\C#\AlgorithmPractice\obj\Debug\netcoreapp3.1\AlgorithmPractice.AssemblyInfo.cs
+e:\WorkSpaces\C#\AlgorithmPractice\obj\Debug\netcoreapp3.1\AlgorithmPractice.dll
+e:\WorkSpaces\C#\AlgorithmPractice\obj\Debug\netcoreapp3.1\AlgorithmPractice.pdb

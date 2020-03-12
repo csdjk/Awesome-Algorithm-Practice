@@ -76,16 +76,35 @@ namespace AlgorithmPractice
             // string res = lps.LongestPalindrome("ac");
 
             //-----------------------------【最长回文子序列】-----------------------------
-            LogestPalindromicSubseq lps = new LogestPalindromicSubseq();
-            int res = lps.LongestPalindromeSubseq("cbbd");
+            // LogestPalindromicSubseq lps = new LogestPalindromicSubseq();
+            // int res = lps.LongestPalindromeSubseq("cbbd");
 
             //-----------------------------【扔鸡蛋】-----------------------------
             // EggDrop eggDrop = new EggDrop();
             // int res = eggDrop.superEggDrop(2,6);
 
+            //-----------------------------【股票问题 一】-----------------------------
+            // BestTimeToBuyAndSellStock bestObj = new BestTimeToBuyAndSellStock();
+            // int res1 = bestObj.MaxProfit(new int[] { 7, 1, 5, 3, 6, 4 });
 
+            //-----------------------------【股票问题 二】-----------------------------
+            // BestTimeToBuyAndSellStock2 bestObj2 = new BestTimeToBuyAndSellStock2();
+            // int res2 = bestObj2.MaxProfit(new int[] { 7, 1, 5, 3, 6, 4 });
+
+            //-----------------------------【股票问题 三】-----------------------------
+            // BestTimeToBuyAndSellStock3 bestObj3 = new BestTimeToBuyAndSellStock3();
+            // int res3 = bestObj3.MaxProfit(new int[] { 7, 1, 5, 3, 6, 4 });
+
+            //-----------------------------【股票问题 四】-----------------------------
+            BestTimeToBuyAndSellStock4 bestObj4 = new BestTimeToBuyAndSellStock4();
+            int res4 = bestObj4.MaxProfit(2,new int[] { 7, 1, 5, 3, 6, 4 });
+
+            //-----------------------------【股票问题 冻结】-----------------------------
+            // BestTimeToBuyAndSellStockCooldown bestObjC = new BestTimeToBuyAndSellStockCooldown();
+            // int resC = bestObjC.MaxProfit(new int[] { 7, 1, 5, 3, 6, 4 });
 
             //-----------------------------【动态规划类 - end】-----------------------------
+
 
 
             Console.WriteLine("Hello World!");

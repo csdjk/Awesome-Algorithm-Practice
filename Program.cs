@@ -96,13 +96,19 @@ namespace AlgorithmPractice
             // int res3 = bestObj3.MaxProfit(new int[] { 7, 1, 5, 3, 6, 4 });
 
             //-----------------------------【股票问题 四】-----------------------------
-            BestTimeToBuyAndSellStock4 bestObj4 = new BestTimeToBuyAndSellStock4();
-            int res4 = bestObj4.MaxProfit(2,new int[] { 7, 1, 5, 3, 6, 4 });
+            // BestTimeToBuyAndSellStock4 bestObj4 = new BestTimeToBuyAndSellStock4();
+            // int res4 = bestObj4.MaxProfit(2,new int[] { 7, 1, 5, 3, 6, 4 });
 
             //-----------------------------【股票问题 冻结】-----------------------------
             // BestTimeToBuyAndSellStockCooldown bestObjC = new BestTimeToBuyAndSellStockCooldown();
             // int resC = bestObjC.MaxProfit(new int[] { 7, 1, 5, 3, 6, 4 });
 
+
+
+
+
+            HouseRobber2 houseRobber2 = new HouseRobber2();
+            int resH = houseRobber2.Rob(new int[]{2,3,2});
             //-----------------------------【动态规划类 - end】-----------------------------
 
 

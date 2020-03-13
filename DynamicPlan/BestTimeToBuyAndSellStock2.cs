@@ -27,9 +27,9 @@ public class BestTimeToBuyAndSellStock2
         1.状态：dp[i,j]， i 代表天数，j代表状态，0 => 不持有， 1=> 持有
 
         2.状态转移方程：
-            不持有  可能来自 昨天也不持有 或者 昨天卖出
+            不持有  可能来自 昨天也不持有 或者 昨天持有，今天卖出
             dp[i, 0] = Math.Max(dp[i - 1, 0], dp[i - 1, 1] + prices[i]);
-            持有    可能来自 昨天也持有中 或者 昨天买入
+            持有    可能来自 昨天也持有中 或者 昨天不持有，今天买入
             dp[i, 1] = Math.Max(dp[i-1, 1], dp[i - 1, 0] - prices[i]);
 
         取最后一天的不持有股票状态就是问题的解
@@ -45,9 +45,9 @@ public class BestTimeToBuyAndSellStock2
 
         for (int i = 1; i < n; i++)
         {
-            // 不持有  可能来自 昨天也不持有 或者 昨天卖出
+            // 不持有  可能来自 昨天也不持有 或者 昨天持有，今天卖出
             dp[i, 0] = Math.Max(dp[i - 1, 0], dp[i - 1, 1] + prices[i]);
-            // 持有    可能来自 昨天也持有中 或者 昨天买入
+            // 持有    可能来自 昨天也持有中 或者 昨天不持有，今天买入
             dp[i, 1] = Math.Max(dp[i-1, 1], dp[i - 1, 0] - prices[i]);
         }
         return dp[n-1, 0];

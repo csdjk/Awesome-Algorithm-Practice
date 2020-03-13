@@ -26,9 +26,9 @@ public class BestTimeToBuyAndSellStockCooldown
         1.当天不持有股票的状态
             有两种情况：昨天也不持有 、 冷冻期，
         2.当天持有股票的状态
-            有两种情况：昨天买入 、 昨天也持有中，
+            有两种情况：昨天不持有，今天买入 、 昨天也持有中，
         3.当天冷冻的状态
-            只有一种情况：昨天卖出，
+            只有一种情况：昨天持有，今天卖出，
 
         取最后一天的不持有股票状态和冷冻状态的最大值 就是问题的解
         **/
@@ -46,9 +46,9 @@ public class BestTimeToBuyAndSellStockCooldown
         {
             // 不持有: 可能来自 昨天也不持有 或者 冷冻期
             dp[i, 0] = Math.Max(dp[i - 1, 0], dp[i - 1, 2]);
-            // 持有: 可能来自 昨天也持有中 或者 昨天买入
+            // 持有: 可能来自 昨天也持有中 或者 昨天不持有，今天买入
             dp[i, 1] = Math.Max(dp[i - 1, 1], dp[i - 1, 0] - prices[i]);
-            // 冷冻期: 只能来自 昨天卖出
+            // 冷冻期: 只能来自 昨天持有，今天卖出
             dp[i, 2] = dp[i - 1, 1] + prices[i];
         }
         return Math.Max(dp[n - 1, 0], dp[n - 1, 2]);
@@ -73,9 +73,9 @@ public class BestTimeToBuyAndSellStockCooldown
             dp_0_1_temp = dp_0_1;
             // 不持有: 可能来自 昨天也不持有 或者 冷冻期
             dp_0_0 = Math.Max(dp_0_0_temp, dp_0_2);
-            // 持有: 可能来自 昨天也持有中 或者 昨天买入
+            // 持有: 可能来自 昨天也持有中 或者 昨天不持有，今天买入
             dp_0_1 = Math.Max(dp_0_1_temp, dp_0_0_temp - prices[i]);
-            // 冷冻期: 只能来自 昨天卖出
+            // 冷冻期: 只能来自 昨天持有，今天卖出
             dp_0_2 = dp_0_1_temp + prices[i];
         }
         return Math.Max(dp_0_0, dp_0_2);

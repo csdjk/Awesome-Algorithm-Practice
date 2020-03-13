@@ -26,10 +26,10 @@ public class BestTimeToBuyAndSellStock4
         状态： dp[i,j,k] => 代表 第 i 天，第 j 笔交易，状态为k 的最大收益，k = 0 代表不持有，k = 1 代表持有
 
         状态转移方程：
-            1.不持有: 可能来自 昨天也不持有 或者 昨天卖出
+            1.不持有: 可能来自 昨天也不持有 或者 昨天持有，今天卖出
             dp[i, j, 0] = Math.Max(dp[i - 1, j, 0], dp[i - 1, j, 1] + prices[i]);
 
-            2.持有: 可能来自 昨天也持有中 或者 昨天买入(有新交易 所以j-1)
+            2.持有: 可能来自 昨天也持有中 或者 昨天不持有，今天买入(有新交易 所以j-1)
             dp[i, j, 1] = Math.Max(dp[i - 1, j, 1], dp[i - 1, j - 1, 0] - prices[i]);
 
         注意：
@@ -58,9 +58,9 @@ public class BestTimeToBuyAndSellStock4
         {
             for (int j = 1; j < k + 1; j++)
             {
-                // 不持有: 可能来自 昨天也不持有 或者 昨天卖出
+                // 不持有: 可能来自 昨天也不持有 或者 昨天持有，今天卖出
                 dp[i, j, 0] = Math.Max(dp[i - 1, j, 0], dp[i - 1, j, 1] + prices[i]);
-                // 持有: 可能来自 昨天也持有中 或者 昨天买入(有新交易 所以j-1)
+                // 持有: 可能来自 昨天也持有中 或者 昨天不持有，今天买入(有新交易 所以j-1)
                 dp[i, j, 1] = Math.Max(dp[i - 1, j, 1], dp[i - 1, j - 1, 0] - prices[i]);
             }
         }

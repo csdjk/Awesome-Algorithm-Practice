@@ -10,6 +10,26 @@ namespace AlgorithmPractice
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            //-----------------------------【二叉树 Start】-----------------------------
+
+
+            //-----------------------------【判断二叉搜索树】-----------------------------
+            // TreeNode rootNode = new TreeNode() { val = 2 };
+            // TreeNode leftNode = new TreeNode() { val = 1 };
+            // TreeNode rightNoed = new TreeNode() { val = 3 };
+            // rootNode.left = leftNode;
+            // rootNode.right = rightNoed;
+            // BinarySearchTree binarySearchTree = new BinarySearchTree();
+            // bool isBST = binarySearchTree.IsValidBST(rootNode);
+
+            //  
+            MaxBrinaryTree maxBrinary = new MaxBrinaryTree();
+
+            TreeNode node = maxBrinary.ConstructMaximumBinaryTree(new int[] { 3, 2, 1 });
+
+            //-----------------------------【二叉树 End】-----------------------------
+
+
             //-----------------------------【全排列】-----------------------------
             // Permutations permut = new Permutations();
             // IList<IList<int>> res = permut.permute(new int[]{1,2,3});
@@ -49,14 +69,6 @@ namespace AlgorithmPractice
             // Console.WriteLine("出队元素：" + priorityQueue.deQueue());
 
 
-            //-----------------------------【判断二叉搜索树】-----------------------------
-            // TreeNode rootNode = new TreeNode() { val = 2 };
-            // TreeNode leftNode = new TreeNode() { val = 1 };
-            // TreeNode rightNoed = new TreeNode() { val = 3 };
-            // rootNode.left = leftNode;
-            // rootNode.right = rightNoed;
-            // BinarySearchTree binarySearchTree = new BinarySearchTree();
-            // bool isBST = binarySearchTree.IsValidBST(rootNode);
 
 
             //-----------------------------【动态规划类 - start】-----------------------------
@@ -107,8 +119,8 @@ namespace AlgorithmPractice
 
 
 
-            HouseRobber2 houseRobber2 = new HouseRobber2();
-            int resH = houseRobber2.Rob(new int[]{2,3,2});
+            // HouseRobber2 houseRobber2 = new HouseRobber2();
+            // int resH = houseRobber2.Rob(new int[] { 2, 3, 2 });
             //-----------------------------【动态规划类 - end】-----------------------------
 
 

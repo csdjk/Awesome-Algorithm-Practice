@@ -121,6 +121,11 @@ namespace AlgorithmPractice
 
             // HouseRobber2 houseRobber2 = new HouseRobber2();
             // int resH = houseRobber2.Rob(new int[] { 2, 3, 2 });
+
+
+            // 不同的二叉搜索树
+            UniqueBinarySearchTress ubst = new UniqueBinarySearchTress();
+            int res = ubst.NumTrees(3);
             //-----------------------------【动态规划类 - end】-----------------------------
 
 
